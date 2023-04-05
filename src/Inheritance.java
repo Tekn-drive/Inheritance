@@ -86,7 +86,7 @@ public class Inheritance {
         System.out.println("1.Person");
         System.out.println("2.Mahasiswa");
         System.out.println("3.Dosen");
-        System.out.println("4. Exit");
+        System.out.println("4.Exit");
         System.out.print("> ");
         int choice = input.nextInt();
         if(choice==1){
