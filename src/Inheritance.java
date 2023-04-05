@@ -30,6 +30,7 @@ class mahasiswa extends person{
 
     public void helpingDosen(){
         point+=10;
+        System.out.println(name + " has helped the lecturer" + " +10 points");
     }
 
     public void display (){
@@ -50,22 +51,27 @@ class dosen extends person{
 
     public void selfDev(){
         point+=10;
+        System.out.println(name + " has self developed an app" + " +10 points");
     }
 
     public void teach(){
         point+=10;
+        System.out.println(name + " has taught the class about OOP inheritance" + " +10 points");
     }
 
     public void p2m(){
         point+=10;
+        System.out.println(name + " was in P2m" + " +10 points");
     }
 
     public void research(){
         point+=10;
+        System.out.println(name + " has done a research on multi inheritance in OOP" + " +10 points");
     }
 
     public void otherWorks(){
         point+=10;
+        System.out.println(name + " was engaged in other works" + " +10 points");
     }
 
     public void display (){
@@ -80,6 +86,7 @@ public class Inheritance {
         System.out.println("1.Person");
         System.out.println("2.Mahasiswa");
         System.out.println("3.Dosen");
+        System.out.println("4. Exit");
         System.out.print("> ");
         int choice = input.nextInt();
         if(choice==1){
@@ -98,8 +105,8 @@ public class Inheritance {
             lecturer.research();
             lecturer.otherWorks();
             lecturer.display();
-        }else{
-            System.out.println("Error, no such option");
+        }else if(choice==4){
+            System.out.println("Thank you for using this app");;
         }
         input.close();
     }
